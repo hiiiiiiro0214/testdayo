@@ -1,0 +1,27 @@
+body {
+    background-color: #f1f1f1;
+    color: #8e732c;
+}
+
+header {
+    .header {
+        margin: 20px 80px;
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .text p {
+        margin-right: 30px;
+    }
+
+    .img img{
+        height: 3%;
+        width: auto;
+    }
+}
