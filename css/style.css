@@ -11,7 +11,6 @@ body {
 header {
     .header {
         margin: 20px 80px;
-        width: 25%;
     }
 
     .text {
@@ -24,13 +23,64 @@ header {
     }
 
     .img img{
-        height: 3%;
-        width: auto;
+        width: 100px;
     }
 }
 
 #section-1 {
-    margin: 20px 80px;
+    margin: 20px 0;
 
+    .flex {
+        align-items: flex-end;
+    }
 
+    .kv {
+        width: 80%;
+
+        position: relative;
+        display: inline-block;
+    }
+
+    .text {
+        width: 25%;
+
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translate(50%, -50%);
+    }
+
+.text img {
+    width: 100%;
+}
+
+    .text p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .img {
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .img img{
+        width: 100%;
+        border-radius: 0 20px 20px 0;
+
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .logo img{
+        margin-right: 80px;
+        width: 80px;
+    }
+
+    p {
+        margin: 0 80px;
+        font-size: 0.5rem;
+    }
 }
