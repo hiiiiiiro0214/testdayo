@@ -1,0 +1,154 @@
+body {
+    background-color: #f1f1f1;
+    color: #8e732c;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    .header {
+        margin: 20px 80px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .text p {
+        margin-right: 30px;
+    }
+
+    .img img{
+        width: 100px;
+    }
+}
+
+#section-1 {
+    margin: 20px 0;
+
+    .flex {
+        align-items: flex-end;
+    }
+
+    .kv {
+        width: 80%;
+
+        position: relative;
+        display: inline-block;
+    }
+
+    .text {
+        width: 25%;
+
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translate(50%, -50%);
+    }
+
+.text img {
+    width: 100%;
+}
+
+    .text p {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .img {
+        height: 600px;
+        overflow: hidden;
+    }
+
+    .img img{
+        width: 100%;
+        border-radius: 0 20px 20px 0;
+
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    .logo img{
+        margin-right: 80px;
+        width: 80px;
+    }
+
+    p {
+        margin: 0 80px;
+        font-size: 0.5rem;
+    }
+}
+
+#section-2 {
+    margin: 20px 80px;
+
+    .flex {
+
+    }
+    .link img {
+        height: 30px;
+
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        .header {
+            margin: 10px 10px;
+        }
+
+        .text p {
+            font-size: 0.8em;
+            margin-right: 10px;
+        }
+
+        .img img{
+        height:30px;
+        width: auto;
+        }
+    }
+
+    #section-1 {
+        .kv {
+            width: 85%;
+        }
+
+        .text {
+            width: 46%;
+
+            transform: translate(30%, -50%);
+        }
+
+        .text p {
+            font-size: 0.5em;
+        }
+
+        .img {
+            height: 400px;
+        }
+
+        .logo img{
+            margin-right: 10px;
+            width: 30px;
+        }
+
+        p {
+            margin: 0 10px;
+            font-size: 0.5em;
+        }
+    }
+}
+
