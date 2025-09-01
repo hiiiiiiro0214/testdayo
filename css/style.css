@@ -1,6 +1,7 @@
 body {
     background-color: #f1f1f1;
     color: #8e732c;
+    font-family: Sorts Mill Goudy, serif;
 }
 
 .flex {
@@ -87,14 +88,76 @@ header {
 }
 
 #section-2 {
-    margin: 20px 80px;
+    margin: 140px 80px;
 
-    .flex {
+    p,h2 {
+    margin: 0;
+}
 
+    .section {
+        width: 100%;
+        position: relative;
+        display: inline-block;
     }
+
+    .content {
+        font-size: 0.5rem;
+
+        margin-top: 35px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transform: translate(-40%, 0%);
+    }
+
+.tex {
+    letter-spacing: 5px;
+}
+
+    .text {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text h2 {
+        margin-bottom: 20px;
+        font-size: 3em;
+    }
+
+    .text h2::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 1px;
+        background: #8e732c;
+        margin: 12px auto 0;
+    }
+    .text p {
+        margin-bottom: 50px;
+    }
+
+    .sentence p {
+        font-size: 1.1em;
+        line-height: 2.5em;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content p {
+        display: inline-block;
+        transform: rotate(90deg);
+    }
+
+
+
     .link img {
         height: 30px;
-
+        margin: 0 10px;
     }
 }
 
